@@ -1,8 +1,9 @@
 import pandas as pd
 
+print("Loading Parquet database into RAM...")
+df = pd.read_parquet("inventory.parquet", engine = "pyarrow")
+
 def get_product_data(target_id: str):
-    df = pd.read_csv("inventory.csv")
-    
     product_row = df[df['product_id'] == target_id]
     
     if product_row.empty:
