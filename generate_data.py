@@ -7,13 +7,10 @@ NUM_PRODUCTS = 100_000
 print(f"Generating {NUM_PRODUCTS} products...")
 
 # 2. Generate mathematically realistic fake data
-# Product IDs: widget_1, widget_2, etc.
 product_ids = [f"widget_{i}" for i in range(1, NUM_PRODUCTS + 1)]
 
-# Base Cost: Random prices between $5.00 and $150.00
 base_costs = np.round(np.random.uniform(5.0, 150.0, NUM_PRODUCTS), 2)
 
-# Competitor Price: We assume competitors mark up the base cost by 20% to 150%
 markups = np.random.uniform(1.2, 2.5, NUM_PRODUCTS)
 competitor_prices = np.round(base_costs * markups, 2)
 
