@@ -1,0 +1,4 @@
+product_id,base_cost,competitor_price,sales_last_30_days
+widget_A,15.0,30.0,1200
+widget_B,8.5,12.0,800
+widget_C,45.0,80.0,2500
